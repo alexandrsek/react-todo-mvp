@@ -1,5 +1,5 @@
 # React Todo MVP
-This is a simple todo app made from scratch with React in less than 6 hours. The main goal is create the minimum viable product and detertmine the posible development roadmap.
+This is a simple todo app made from scratch with React in less than 6 hours. The main goal was to create the minimum viable product and detertmine the posible development roadmap.
 
 ### Possible development roadmap
 - [x] Create a simple MVP todo using React.
