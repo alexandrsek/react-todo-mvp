@@ -1,0 +1,87 @@
+@import "styles/variables.scss";
+
+$transition: 0.25s ease;
+
+.todo-item {
+	will-change: transform, left, top;
+	position: relative;
+	margin-bottom: 4px;
+	&--dragging {
+		.todo-item__block {
+			box-shadow: 0 10px 50px rgba(30, 30, 30, 0.08);
+		}
+	}
+}
+
+.todo-item__block {
+	display: flex;
+	background: #fff;
+	border: 1px solid #eee;
+	border-radius: $border-radius;
+	transition: $transition;
+}
+
+.todo-item__checkbox {
+	flex: 0 0 auto;
+}
+
+.todo-item__content {
+	text-decoration: none;
+	flex: 1 1 auto;
+	height: 1em;
+	line-height: 24px;
+	font-size: 16px;
+	padding: 8px 0;
+	appearance: none;
+	resize: none;
+	border: none;
+	&:focus {
+		box-shadow: none;
+		outline: none;
+	}
+	&--done {
+		color: $color-light;
+		text-decoration: line-through;
+		text-decoration-color: $color-light;
+	}
+}
+
+.todo-item__action {
+	width: 42px;
+	height: 42px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.todo-item__delete {
+	cursor: pointer;
+	color: #ccc;
+	&:hover {
+		color: $color-error;
+	}
+}
+
+.todo-item {
+	&:hover,
+	&--dragging {
+		.todo-item__drag-handler {
+			opacity: 1;
+			color: #333;
+		}
+	}
+}
+
+.todo-item__drag-handler {
+	width: fit-content;
+	position: absolute;
+	left: 0;
+	color: #999;
+	opacity: 0;
+	padding: 0 4px;
+	transform: translateX(-100%);
+	transition: $transition;
+	&:hover {
+		color: #333;
+	}
+}

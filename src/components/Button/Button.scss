@@ -1,0 +1,25 @@
+@import "styles/variables.scss";
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-width: 42px;
+	height: 42px;
+	border-radius: $border-radius;
+	padding: 0 16px;
+	cursor: pointer;
+
+	&--primary {
+		background: $color-primary;
+		color: #fff;
+	}
+
+	&--secondary {
+		background: #eee;
+	}
+
+	&__label {
+		font-size: 15px;
+	}
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "LDwIPM6mo4HVHU3hYH1L4",
+    "content": "Write a simple MVP todo using React",
+    "isDone": true
+  },
+  {
+    "id": "FmPdYH5NYMT4d1-q8Zgq6",
+    "content": "Add option to manage multiple todo lists",
+    "isDone": false
+  },
+  {
+    "id": "lB1dMCVaknILBBOe-48ZX",
+    "content": "Add option to export and import todos",
+    "isDone": false
+  },
+  {
+    "id": "-qBxpFWWMFij9IVzXB71p",
+    "content": "Write a backend with auth so users can share and manage their todos from multiple devices",
+    "isDone": false
+  }
+]
