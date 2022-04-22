@@ -8,6 +8,9 @@ This is a simple todo app made from scratch with React in less than 6 hours. The
 - [ ] Write a backend with auth so users can share and manage their todos from multiple devices.
 - [ ] Improve the UI and accessibility.
 
+## Demo 
+[Github Pages Demo](https://alexandrsek.github.io/react-todo-mvp/ "Demo website")
+
 ## Installation
 1. Clone the repository
 ```sh 
